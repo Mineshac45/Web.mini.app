@@ -67,27 +67,27 @@
         /* Style for titles */
         h1 {
             font-size: 6rem; /* Larger title size for H1 */
-            margin-bottom: 2rem; /* Increased space below H1 */
+            margin-bottom: 6rem; /* Increased space below H1 */
             margin-top: 4rem; /* Increased space above H1 */
             z-index: 1;
         }
 
         h2 {
             font-size: 4rem; /* Larger title size for H2 */
-            margin-bottom: 3rem; /* Increased space below H2 */
+            margin-bottom: 8rem; /* Increased space below H2 */
             z-index: 1;
         }
 
         /* Make the slider and button bigger */
         .slider {
-            width: 80%;
-            height: 40px; /* Increased height */
+            width: 100%;
+            height: 70px; /* Increased height */
             z-index: 1;
         }
 
         .slider::-webkit-slider-thumb {
-            width: 30px; /* Increased width of slider thumb */
-            height: 30px; /* Increased height of slider thumb */
+            width: 50px; /* Increased width of slider thumb */
+            height: 50px; /* Increased height of slider thumb */
         }
 
         #signalButton {
@@ -141,8 +141,8 @@
             grid.innerHTML = '';
 
             // Determine the number of stars to show based on the slider value
-            const maxStars = 12; // Maximum prediction for 1 mine
-            const minStars = 5; // Minimum prediction for 10 mines
+            const maxStars = 9; // Maximum prediction for 1 mine
+            const minStars = 3; // Minimum prediction for 10 mines
             const starsToShow = maxStars - Math.floor(((numMines - 1) / 9) * (maxStars - minStars));
 
             // Create empty grid
